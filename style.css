@@ -58,6 +58,17 @@ h1 {
     line-height: 100%;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+.subscribe input:-internal-autofill-selected {
+    background-color: red !important;
+  }
+
 .container {
     width: 100%;    
 }
@@ -96,6 +107,12 @@ h1 {
     font-size: 16px;
     margin-bottom: 24px;
     text-indent: 1rem;
+    border-radius: 8px;    
+}
+
+.subscribe input:focus{
+    outline: none;
+    box-shadow: none;
 }
 
 .subscribe input::placeholder {    
@@ -230,8 +247,15 @@ h1 {
     }
 
     .about h1 {
-        font-size: 12px;
+        font-size: 56px;
         padding-bottom: 38px;
     }
+
+    .subscribe input:focus{
+        outline: none;
+        box-shadow: none;
+    }
+
+    
 }
 
