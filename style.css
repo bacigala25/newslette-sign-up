@@ -228,5 +228,10 @@ h1 {
     .hidden {
         display: none;
     }
+
+     .about h1 {
+        font-size: 12px;
+        padding-bottom: 38px;
+    }
 }
 
